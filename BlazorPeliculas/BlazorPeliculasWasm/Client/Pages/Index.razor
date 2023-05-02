@@ -1,18 +1,41 @@
 ﻿@page "/"
 
 <div>
-    <h3>Película</h3>
-    <p>Titulo: @WakandaForEver.Nombre</p>
-    <p>Fecha de lanzamiento: @WakandaForEver.FechaLanzamiento.ToString("dd MMM yyyy")</p>
+    <h3>Películas</h3>
+    <hr />
+    @foreach (var pelicula in ObtenerListadoDePeliculas())
+    {
+        <div>
+            <p>Titulo: <strong>@pelicula.Nombre</strong></p>
+            <p>Fecha de lanzamiento: <strong>@pelicula.FechaLanzamiento.ToString("dd MMM yyyy")</strong></p>
+            <hr />
+        </div>
+    }
 </div>
 
-<button @onclick=@ManejarCickBoton>Click Me</button>
+<br />
+<br />
+<br />
 
+<div>
+    <h3>Películas</h3>
+    <hr />
+    @for (int i = 0; i < Peliculas.Count; i++)
+    {
+        <div>
+            <p>@(i+1)) Titulo: <strong>@Peliculas[i].Nombre</strong></p>
+            <p>Fecha de lanzamiento: <strong>@Peliculas[i].FechaLanzamiento.ToString("dd MMM yyyy")</strong></p>
+            <hr />
+        </div>
+    }
+
+</div>
 
 @code
 {
 
     IPelicula WakandaForEver { get => ObtenerPelicula(); }
+    IList<IPelicula> Peliculas { get => ObtenerListadoDePeliculas(); }
 
     IPelicula ObtenerPelicula()
     {
@@ -21,6 +44,29 @@
                 Nombre = "Wakanda Forever",
                 FechaLanzamiento = new DateTime(2022, 11, 25)
             };
+    }
+
+    IList<IPelicula> ObtenerListadoDePeliculas()
+    {
+        return new List<IPelicula>()
+        {
+            new Pelicula
+            {
+                Nombre = "Wakanda Forever",
+                FechaLanzamiento = new DateTime(2022, 11, 11)
+            }, 
+            new Pelicula
+            {
+                Nombre = "Moana",
+                FechaLanzamiento = new DateTime(2016, 11, 23)
+            }, 
+            new Pelicula
+            {
+                Nombre = "Inception",
+                FechaLanzamiento = new DateTime(2010, 7, 16)
+            }
+
+        };
     }
 
     void ManejarCickBoton()
