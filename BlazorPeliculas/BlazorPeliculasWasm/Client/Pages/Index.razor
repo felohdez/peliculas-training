@@ -1,0 +1,31 @@
+﻿@page "/"
+
+<div>
+    <h3>Película</h3>
+    <p>Titulo: @WakandaForEver.Nombre</p>
+    <p>Fecha de lanzamiento: @WakandaForEver.FechaLanzamiento.ToString("dd MMM yyyy")</p>
+</div>
+
+<button @onclick=@ManejarCickBoton>Click Me</button>
+
+
+@code
+{
+
+    IPelicula WakandaForEver { get => ObtenerPelicula(); }
+
+    IPelicula ObtenerPelicula()
+    {
+        return new Pelicula
+            {
+                Nombre = "Wakanda Forever",
+                FechaLanzamiento = new DateTime(2022, 11, 25)
+            };
+    }
+
+    void ManejarCickBoton()
+    {
+        Console.WriteLine("Me han clickeado usando función!");
+    }
+
+}
