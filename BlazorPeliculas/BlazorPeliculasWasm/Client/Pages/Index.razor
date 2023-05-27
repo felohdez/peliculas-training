@@ -5,9 +5,27 @@
     <ListadoPeliculas Peliculas="ObtenerListadoDePeliculas()" />
 </div>
 
+<div>
+    <h2>Agregar película</h2>
+    
+    <InputTextEjemplo placeholder="Título de la película" />
+    <InputTextEjemplo @attributes="@(new Dictionary<string, object>()
+                                       {
+                                           {"placeholder","Clasificación"},
+                                           {"disabled","true"}
+                                       })" />
+    <InputTextEjemplo @attributes="TextBoxAttributosArbitrarios" />
+</div>
 
 @code
 {
+    private Dictionary<string, object> TextBoxAttributosArbitrarios =
+        new Dictionary<string, object>()
+            {
+                {
+                    "placeholder", "Género"
+                }
+            };
     // // Properties
     // IPelicula WakandaForEver { get => ObtenerPelicula(); }
     // IList<IPelicula>? Peliculas { get; set; }

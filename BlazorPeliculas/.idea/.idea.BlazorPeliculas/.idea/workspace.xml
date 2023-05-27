@@ -13,13 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc670d8d-3af8-490b-8804-274dc7539fd5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/Ejemplo.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/ListadoPeliculas.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/PeliculaItem.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/Peliculas/Ejemplo.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/InputTextEjemplo.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorPeliculas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorPeliculas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/BlazorPeliculasWasm.Client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/BlazorPeliculasWasm.Client.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Counter.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Counter.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Index.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +49,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.BlazorPeliculasWasm.Client: https">
+  <component name="RunManager" selected=".NET Launch Settings Profile.BlazorPeliculasWasm.Client: http">
     <configuration name="BlazorPeliculasWasm.Client: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/BlazorPeliculasWasm/Client/BlazorPeliculasWasm.Client.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -156,8 +151,16 @@
       <updated>1682992734285</updated>
       <workItem from="1682992735375" duration="13000" />
       <workItem from="1682993480136" duration="149000" />
-      <workItem from="1685156586693" duration="3488000" />
+      <workItem from="1685156586693" duration="4986000" />
     </task>
+    <task id="LOCAL-00001" summary="ListadoPeliculas and PeliculaItem Components">
+      <created>1685160354206</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685160354206</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,5 +168,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="ListadoPeliculas and PeliculaItem Components" />
+    <option name="LAST_COMMIT_MESSAGE" value="ListadoPeliculas and PeliculaItem Components" />
   </component>
 </project>
