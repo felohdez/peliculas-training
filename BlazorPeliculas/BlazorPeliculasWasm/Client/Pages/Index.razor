@@ -2,115 +2,41 @@
 
 <div>
     <h3>Películas</h3>
-    <hr />
-
-    @if(Peliculas is null)
-    {
-        <p>
-            <img 
-                alt="Cargando películas"
-                src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" />
-        </p>
-    }
-    else if (Peliculas.Count == 0)
-    {
-        <p>No hay películas</p>
-    }
-    else
-    {
-        @foreach (var pelicula in Peliculas)
-        {
-            <div>
-                <p>
-                    Titulo: <strong>@pelicula.Nombre</strong>
-
-                    @if (DateTime.Today.Subtract(pelicula.FechaLanzamiento).Days <= 14)
-                    {
-                        <span style="color:red"> (Reciente)</span>
-                    }
-
-                </p>
-                <p>Fecha de lanzamiento: <strong>@pelicula.FechaLanzamiento.ToString("dd MMM yyyy")</strong></p>
-                <hr />
-            </div>
-        }
-
-        <br />
-        <br />
-        <br />
-
-        <div>
-            <h3>Películas</h3>
-            <hr />
-            @for (int i = 0; i < Peliculas.Count; i++)
-            {
-                <div>
-                    <p>@(i + 1)) Titulo: <strong>@Peliculas[i].Nombre</strong></p>
-                    <p>Fecha de lanzamiento: <strong>@Peliculas[i].FechaLanzamiento.ToString("dd MMM yyyy")</strong></p>
-                    <hr />
-                </div>
-            }
-
-        </div>
-
-
-    }
-
+    <ListadoPeliculas Peliculas="ObtenerListadoDePeliculas()" />
 </div>
 
 
 @code
 {
-    // Properties
-    IPelicula WakandaForEver { get => ObtenerPelicula(); }
-    IList<IPelicula>? Peliculas { get; set; }
+    // // Properties
+    // IPelicula WakandaForEver { get => ObtenerPelicula(); }
+    // IList<IPelicula>? Peliculas { get; set; }
 
 
     // Methods
-
-    protected override async Task OnInitializedAsync()
-    {
-        await Task.Delay(1000);
-        Peliculas = ObtenerListadoDePeliculas();
-
-    }
-
-    IPelicula ObtenerPelicula()
-    {
-        return new Pelicula
-            {
-                Nombre = "Wakanda Forever",
-                FechaLanzamiento = new DateTime(2022, 11, 25)
-            };
-    }
 
     IList<IPelicula> ObtenerListadoDePeliculas()
     {
         var tenDaysBefore = (DateTime.Today).AddDays(-10);
         return new List<IPelicula>()
-        {
-            new Pelicula
             {
-                Nombre = "Wakanda Forever",
-                FechaLanzamiento = tenDaysBefore
-            }, 
-            new Pelicula
-            {
-                Nombre = "Moana",
-                FechaLanzamiento = new DateTime(2016, 11, 23)
-            }, 
-            new Pelicula
-            {
-                Nombre = "Inception",
-                FechaLanzamiento = new DateTime(2010, 7, 16)
-            }
+                new Pelicula
+                    {
+                        Nombre = "Wakanda Forever",
+                        FechaLanzamiento = tenDaysBefore
+                    }, 
+                new Pelicula
+                    {
+                        Nombre = "Moana",
+                        FechaLanzamiento = new DateTime(2016, 11, 23)
+                    }, 
+                new Pelicula
+                    {
+                        Nombre = "Inception",
+                        FechaLanzamiento = new DateTime(2010, 7, 16)
+                    }
 
-        };
-    }
-
-    void ManejarCickBoton()
-    {
-        Console.WriteLine("Me han clickeado usando función!");
+            };
     }
 
 }

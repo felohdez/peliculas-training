@@ -1,0 +1,57 @@
+﻿
+
+    @if(Peliculas is null)
+    {
+        <p>
+            <img 
+                alt="Cargando películas"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" />
+        </p>
+    }
+    else if (Peliculas.Count == 0)
+    {
+        <p>No hay películas</p>
+    }
+    else
+    {
+        <hr />
+        @foreach (var pelicula in Peliculas)
+        {
+            <PeliculaItem Pelicula="pelicula" />
+        }
+        
+    }
+
+
+
+@code {
+
+    // Properties
+    [Parameter]
+    [EditorRequired]
+    public IList<IPelicula>? Peliculas { get; set; }
+    
+    // // Component Life Cycle
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     // await Task.Delay(10);
+    //     // Peliculas = ObtenerListadoDePeliculas();
+    //
+    // }
+    
+    // Methods
+    IPelicula ObtenerPelicula()
+    {
+        return new Pelicula
+            {
+                Nombre = "Wakanda Forever",
+                FechaLanzamiento = new DateTime(2022, 11, 25)
+            };
+    }
+
+    
+    void ManejarCickBoton()
+    {
+        Console.WriteLine("Me han clickeado usando función!");
+    }
+}

@@ -8,14 +8,29 @@
     <projectFile profileName="http">BlazorPeliculasWasm/Server/BlazorPeliculasWasm.Server.csproj</projectFile>
     <projectFile profileName="https">BlazorPeliculasWasm/Server/BlazorPeliculasWasm.Server.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc670d8d-3af8-490b-8804-274dc7539fd5" name="Changes" comment="" />
+    <list default="true" id="fc670d8d-3af8-490b-8804-274dc7539fd5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/Ejemplo.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/ListadoPeliculas.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/PeliculaItem.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/Peliculas/Ejemplo.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorPeliculas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorPeliculas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/BlazorPeliculasWasm.Client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/BlazorPeliculasWasm.Client.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Counter.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Counter.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Index.razor" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ProjectId" id="2PDXfxl1CeJxmprwd4dfgBqNhfH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -27,7 +42,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "settings.editor.selected.configurable": "HotReloadSettingsPage"
   },
   "keyToStringList": {
     "rider.external.source.directories": [
@@ -37,7 +54,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.BlazorPeliculasWasm.Server: https">
+  <component name="RunManager" selected=".NET Launch Settings Profile.BlazorPeliculasWasm.Client: https">
     <configuration name="BlazorPeliculasWasm.Client: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/BlazorPeliculasWasm/Client/BlazorPeliculasWasm.Client.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -139,6 +156,7 @@
       <updated>1682992734285</updated>
       <workItem from="1682992735375" duration="13000" />
       <workItem from="1682993480136" duration="149000" />
+      <workItem from="1685156586693" duration="3488000" />
     </task>
     <servers />
   </component>

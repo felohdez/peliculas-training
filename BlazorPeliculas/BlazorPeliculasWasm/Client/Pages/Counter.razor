@@ -4,9 +4,15 @@
 
 <h1>Counter</h1>
 
-<p role="status">Current count: @currentCount</p>
+<div>
+    <p role="status">Current count: @currentCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+    <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+</div>
+
+<div>
+    <ListadoPeliculas Peliculas="ObtenerListadoDePeliculas()" />
+</div>
 
 @code {
     private int currentCount = 0;
@@ -15,4 +21,25 @@
     {
         currentCount++;
     }
+    
+    
+    IList<IPelicula> ObtenerListadoDePeliculas()
+    {
+        var tenDaysBefore = (DateTime.Today).AddDays(-10);
+        return new List<IPelicula>()
+            {
+                new Pelicula
+                    {
+                        Nombre = "Spider-Man: Far From Home",
+                        FechaLanzamiento = tenDaysBefore
+                    }, 
+                new Pelicula
+                    {
+                        Nombre = "Avengers Endgame",
+                        FechaLanzamiento = new DateTime(2016, 11, 23)
+                    }, 
+                
+            };
+    }
+
 }
