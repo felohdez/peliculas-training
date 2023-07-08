@@ -9,29 +9,11 @@
 @*     <BindAfterDemo></BindAfterDemo> *@
 @* *@
 @* </div> *@
+
 <div>
     <h3>Películas</h3>
-    <ListadoPeliculas Peliculas="ObtenerListadoDePeliculas()">
-        <Cargando>
-            Cargando...
-        </Cargando>
-        <SinRegistros>
-            Sin registros...
-        </SinRegistros>
-
-    </ListadoPeliculas>
-</div>
-
-<div>
-    <h2>Agregar película</h2>
+    <ListadoPeliculas Peliculas="ObtenerListadoDePeliculas()" />
     
-    <InputTextEjemplo placeholder="Título de la película" />
-    <InputTextEjemplo @attributes="@(new Dictionary<string, object>()
-                                       {
-                                           {"placeholder","Clasificación"},
-                                           {"disabled","true"}
-                                       })" />
-    <InputTextEjemplo @attributes="TextBoxAttributosArbitrarios" />
 </div>
 
 @code
@@ -43,14 +25,10 @@
                     "placeholder", "Género"
                 }
             };
-    // // Properties
-    // IPelicula WakandaForEver { get => ObtenerPelicula(); }
-    // IList<IPelicula>? Peliculas { get; set; }
-
 
     // Methods
 
-    IList<Pelicula> ObtenerListadoDePeliculas()
+    List<Pelicula> ObtenerListadoDePeliculas()
     {
         var tenDaysBefore = (DateTime.Today).AddDays(-10);
         return new List<Pelicula>()

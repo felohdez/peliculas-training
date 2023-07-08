@@ -1,48 +1,17 @@
 ﻿
-
-    @if(Peliculas is null)
-    {
-        <p>
-            @if (Cargando is null)
-            {
-                <img
-                    alt="Cargando películas"
-                    src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"/>
-            }
-            else
-            {
-                @Cargando
-            }
-        </p>
-    }
-    else if (Peliculas.Count == 0)
-    {
-        @if (SinRegistros is null)
-        {
-            <p>No hay películas para mostrar</p>
-        }
-        else
-        {
-            @SinRegistros
-        }
-    }
-    else
-    {
-        <div>
-            <input type="checkbox" @bind="_mostrarBotones">
-            <span>Mostrar todos los botones</span>
-        </div>
-        <div>
-            @foreach (var pelicula in Peliculas)
-        {
-            <PeliculaItem Pelicula="pelicula" 
+<div>
+    <input type="checkbox" @bind="_mostrarBotones">
+    <span>Mostrar todos los botones</span>
+</div>
+<div>
+    <ListadoGenerico Items="Peliculas">
+        <HayRegistros Context = "Pelicula">
+            <PeliculaItem Pelicula="Pelicula"
                           MostrarBotones="_mostrarBotones"
-                          EliminarPelicula="EliminarPelicula"
-            />
-        }
-        </div>
-    }
-
+                          EliminarPelicula="EliminarPelicula"/>
+        </HayRegistros>
+    </ListadoGenerico>
+</div>
 
 
 @code {
@@ -52,17 +21,13 @@
     // Properties
     [Parameter]
     [EditorRequired]
-    public IList<Pelicula>? Peliculas { get; set; }
+    public List<Pelicula>? Peliculas { get; set; }
 
     
     // [Parameter]
     // public RenderFragment ChildContent { get; set; } = null!;
     
-    [Parameter]
-    public RenderFragment Cargando { get; set; } = null!;
-    
-    [Parameter]
-    public RenderFragment SinRegistros { get; set; } = null!;
+
 
     private void EliminarPelicula(Pelicula pelicula)
     {
