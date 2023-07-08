@@ -14,12 +14,16 @@
     }
     else
     {
-        <hr />
-        @foreach (var pelicula in Peliculas)
+        <div>
+            <input type="checkbox" @bind="_mostrarBotones">
+            <span>Mostrar todos los botones</span>
+        </div>
+        <div>
+            @foreach (var pelicula in Peliculas)
         {
-            <PeliculaItem Pelicula="pelicula" />
+            <PeliculaItem Pelicula="pelicula" MostrarBotones="_mostrarBotones" />
         }
-        
+        </div>
     }
 
 
@@ -30,6 +34,10 @@
     [Parameter]
     [EditorRequired]
     public IList<IPelicula>? Peliculas { get; set; }
+
+
+    bool _mostrarBotones = false;
+    
     
     // // Component Life Cycle
     // protected override async Task OnInitializedAsync()

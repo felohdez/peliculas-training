@@ -1,0 +1,36 @@
+﻿@using System.Runtime.InteropServices.ComTypes
+<h3>BindAfterDemo</h3>
+
+<input type="text" @bind="busqueda" @bind:after="Buscar" >
+
+<div>
+    <p>Personas encontras:</p>
+    <ul>
+        @foreach (var persona in personasEncontradas)
+        {
+            <li>@persona</li>
+        }
+    </ul>
+    
+</div>
+@code {
+
+    private string busqueda = String.Empty;
+    private List<string> personasEncontradas = new List<string>();
+    
+
+    private async Task Buscar()
+    {
+        var personas = new List<string>
+            {
+                "Felipe Gavilán",
+                "Felipe López",
+                "Claudia Rodríguez",
+                "Claudia López",
+            };
+
+        await Task.Delay(500);
+
+        personasEncontradas = personas.Where(x => x.Contains(busqueda)).ToList();
+    }
+}

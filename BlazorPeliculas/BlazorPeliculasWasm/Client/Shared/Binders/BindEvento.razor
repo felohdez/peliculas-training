@@ -1,0 +1,13 @@
+﻿@using Microsoft.Extensions.Options
+<h3>BindEvento</h3>
+
+<div>
+    <input @bind="Valor" @bind:event="oninput" />
+</div>
+<p>
+    El valor es @Valor.
+</p>
+@code {
+
+    public string Valor { get; set; }
+}

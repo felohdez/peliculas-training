@@ -13,14 +13,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc670d8d-3af8-490b-8804-274dc7539fd5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/InputTextEjemplo.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/Binders/BindAfterDemo.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/Binders/BindEvento.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/Binders/BindGetSetDemo.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorPeliculas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorPeliculas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/BlazorPeliculasWasm.Client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/BlazorPeliculasWasm.Client.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Counter.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Counter.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/ListadoPeliculas.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/ListadoPeliculas.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/PeliculaItem.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/PeliculaItem.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/Peliculas/Ejemplo.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/_Imports.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2PDXfxl1CeJxmprwd4dfgBqNhfH" />
   <component name="ProjectLevelVcsManager">
@@ -37,6 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "develop",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "settings.editor.selected.configurable": "HotReloadSettingsPage"
@@ -57,6 +69,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
+      <browser with-js-debugger="true" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
@@ -72,10 +85,12 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
+      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <option name="RUNTIME_TYPE" value="coreclr" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -87,6 +102,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
+      <browser with-js-debugger="true" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
@@ -140,6 +156,14 @@
         <option name="Build" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.BlazorPeliculasWasm.Client: http" />
+      <item itemvalue=".NET Launch Settings Profile.BlazorPeliculasWasm.Client: https" />
+      <item itemvalue=".NET Launch Settings Profile.BlazorPeliculasWasm.Client: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.BlazorPeliculasWasm.Server: http" />
+      <item itemvalue=".NET Launch Settings Profile.BlazorPeliculasWasm.Server: https" />
+      <item itemvalue=".NET Launch Settings Profile.BlazorPeliculasWasm.Server: IIS Express" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -151,7 +175,8 @@
       <updated>1682992734285</updated>
       <workItem from="1682992735375" duration="13000" />
       <workItem from="1682993480136" duration="149000" />
-      <workItem from="1685156586693" duration="4986000" />
+      <workItem from="1685156586693" duration="5291000" />
+      <workItem from="1688785182979" duration="6441000" />
     </task>
     <task id="LOCAL-00001" summary="ListadoPeliculas and PeliculaItem Components">
       <created>1685160354206</created>
@@ -160,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685160354206</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Attributos arbitrarios pasados como parámetros">
+      <created>1685161927912</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685161927912</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +201,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="ListadoPeliculas and PeliculaItem Components" />
-    <option name="LAST_COMMIT_MESSAGE" value="ListadoPeliculas and PeliculaItem Components" />
+    <MESSAGE value="Attributos arbitrarios pasados como parámetros" />
+    <option name="LAST_COMMIT_MESSAGE" value="Attributos arbitrarios pasados como parámetros" />
   </component>
 </project>
