@@ -14,10 +14,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fc670d8d-3af8-490b-8804-274dc7539fd5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorPeliculas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorPeliculas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Counter.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Counter.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Pages/Index.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/ListadoPeliculas.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/ListadoPeliculas.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/PeliculaItem.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorPeliculasWasm/Client/Shared/PeliculaItem.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +168,7 @@
       <workItem from="1682992735375" duration="13000" />
       <workItem from="1682993480136" duration="149000" />
       <workItem from="1685156586693" duration="5291000" />
-      <workItem from="1688785182979" duration="7794000" />
+      <workItem from="1688785182979" duration="8792000" />
     </task>
     <task id="LOCAL-00001" summary="ListadoPeliculas and PeliculaItem Components">
       <created>1685160354206</created>
