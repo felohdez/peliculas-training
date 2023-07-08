@@ -21,7 +21,10 @@
         <div>
             @foreach (var pelicula in Peliculas)
         {
-            <PeliculaItem Pelicula="pelicula" MostrarBotones="_mostrarBotones" />
+            <PeliculaItem Pelicula="pelicula" 
+                          MostrarBotones="_mostrarBotones"
+                          EliminarPelicula="EliminarPelicula"
+            />
         }
         </div>
     }
@@ -29,14 +32,20 @@
 
 
 @code {
+        
+    bool _mostrarBotones = false;
 
     // Properties
     [Parameter]
     [EditorRequired]
-    public IList<IPelicula>? Peliculas { get; set; }
+    public IList<Pelicula>? Peliculas { get; set; }
 
 
-    bool _mostrarBotones = false;
+    private void EliminarPelicula(Pelicula pelicula)
+    {
+        Console.WriteLine($"Eliminando la película {pelicula.Nombre}");
+        Peliculas!.Remove(pelicula);
+    }
     
     
     // // Component Life Cycle
@@ -48,7 +57,7 @@
     // }
     
     // Methods
-    IPelicula ObtenerPelicula()
+    Pelicula ObtenerPelicula()
     {
         return new Pelicula
             {

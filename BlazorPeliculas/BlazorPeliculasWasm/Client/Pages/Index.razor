@@ -1,14 +1,14 @@
 ﻿@page "/"
 
-<div>
-    <h1>Binders</h1>
-    <BindEvento/>
-    <hr>
-    <BindGetSetDemo ></BindGetSetDemo>
-    <hr>
-    <BindAfterDemo></BindAfterDemo>
-
-</div>
+@* <div> *@
+@*     <h1>Binders</h1> *@
+@*     <BindEvento/> *@
+@*     <hr> *@
+@*     <BindGetSetDemo ></BindGetSetDemo> *@
+@*     <hr> *@
+@*     <BindAfterDemo></BindAfterDemo> *@
+@* *@
+@* </div> *@
 <div>
     <h3>Películas</h3>
     <ListadoPeliculas Peliculas="ObtenerListadoDePeliculas()" />
@@ -42,10 +42,10 @@
 
     // Methods
 
-    IList<IPelicula> ObtenerListadoDePeliculas()
+    IList<Pelicula> ObtenerListadoDePeliculas()
     {
         var tenDaysBefore = (DateTime.Today).AddDays(-10);
-        return new List<IPelicula>()
+        return new List<Pelicula>()
             {
                 new Pelicula
                     {

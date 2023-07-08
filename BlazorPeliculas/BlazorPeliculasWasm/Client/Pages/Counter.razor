@@ -24,10 +24,10 @@
     }
     
     
-    IList<IPelicula> ObtenerListadoDePeliculas()
+    IList<Pelicula> ObtenerListadoDePeliculas()
     {
         var tenDaysBefore = (DateTime.Today).AddDays(-10);
-        return new List<IPelicula>()
+        return new List<Pelicula>()
             {
                 new Pelicula
                     {
